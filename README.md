@@ -1,24 +1,27 @@
-# LLM-Chatbot
-LLM Chatbot (Transformers)
+# Chatbot using Pretrained LLM and Gradio Interface
 
+This project implements a simple chatbot using a pretrained language model and a user-friendly interface built with Gradio. Code available in the ``chatbot.ipynb`` file.
 
-📦 Requisitos
-Python
+## Features
 
-Hugging Face Transformers
+- Loads a pretrained LLM from Hugging Face (`gpt2-medium`)
+- Uses Gradio's `ChatInterface` for interactive conversation
+    * Input: User message (text)
+    * Output: Model-generated reply
+    * Session memory for chat history
+- Handles user messages and generates coherent responses
+- Clean and lightweight setup
 
-Datasets (opcional si quieres entrenar o afinar)
+## Tech Stack
 
-PyTorch
+- Python
+- PyTorch
+- Hugging Face Transformers
+- Gradio
 
-(Opcional) Gradio para interfaz web
+## Environment
 
+The environment configuration is provided for reproducibility:
 
-✅ Fases del Proyecto
-Carga del modelo conversacional
-
-Loop de conversación
-
-(Opcional) Fine-tuning con tus datos
-
-(Opcional) Interfaz bonita con Gradio
+``environment.yml`` - for setting up with Conda.
+``requirements.txt`` - for installing dependencies with pip.
